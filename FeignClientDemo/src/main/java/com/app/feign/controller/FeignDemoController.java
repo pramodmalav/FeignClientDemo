@@ -15,7 +15,6 @@ public class FeignDemoController {
 	@Autowired
 	private FeignServiceUtil feignServiceUtil;
 	
-	
 	@GetMapping("/user-name")
 	public String getUserName() {
 		return feignServiceUtil.getName();
